@@ -12,4 +12,4 @@ app.set("port", 5000);
 app.use("/api/categorias", categoriaRoutes)
 
 /* Hacemos disponible a mi server app para toda la aplicación */
-export default app;
+export default app; 
