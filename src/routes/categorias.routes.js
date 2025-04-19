@@ -7,7 +7,10 @@ const router = Router();
 /* configuramos respuesta desde server metodo http get */
 router.get("/", categoriaController.getCategorias);/* read */
 router.post("/", categoriaController.postCategorias);/* create */
-/* update, delete */
+
+/* Ruta que recibe un parametro */
+router.get("/:id", categoriaController.getCategory);/* create */
+
 
 /* hacemos disponible a router en toda la app */
 export default router;
