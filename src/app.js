@@ -19,5 +19,9 @@ app.use(cors());
 app.use("/api/categorias", categoriaRoutes)
 app.use("/api/productos", productosRoutes)
 
+app.get('/', (req, res) => {
+    res.send('REST API EN RENDER WITHOUT DATABASE ENDPOINTS')
+})
+
 /* Hacemos disponible a mi server app para toda la aplicación */
 export default app; 
